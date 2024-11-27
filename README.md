@@ -68,8 +68,23 @@ No documentation will be made available for this project since this project only
 
 ---
 
-## 🤝 Contributing
-Contributions are welcome! If you'd like to contribute to this project, please contact me. See Contact section below.
+## 🛠️ Challenges/Issues Faced with fixes
+- [Issue #1](For Preprocessing PDF file, many tools like PDFminer, PyPDF2 etc was tried, but they were not suitable for the task. PDFplumber was finally chosen.)
+
+- [Issue #2](Extracting Tables from PDF was also a challenge. Whole data processing logic was reworked with PdfPlumber to extract the data from tables in readable format and then appended in the correct sequence.)
+
+[Issue #3](Cache layer was added in ChromaDB to prevent re-embedding of the data. This was done to avoid overloading the ChromaDB server with data and to make the retrieval process more efficient.)
+
+[Issue #4](Cross Encoder based Reranker was added to better select the most relevant passages from the document. This was done to improve the quality of the answers to the user queries.)
+
+[Issue #5](System Prompt was fully reworked to include few shot examples and a few instructions to guide the model to generate more relevant answers to the user queries. This was done to improve the quality of the answers to the user queries.)
+
+---
+
+## 🌟 Future Improvements
+- [ ] Add more selectable GPT models to the project(Gemini, Claude AI, Huggingface models etc).
+- [ ] Add more features to the project.
+- [ ] Add more selectable Vector Store to the project(Pinecone, Weaviate etc).
 
 ---
 
