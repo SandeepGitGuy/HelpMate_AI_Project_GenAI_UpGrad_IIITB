@@ -20,7 +20,7 @@ Example Use Cases:
 - ⚡ **Natural Language Understanding**: Generates clear, concise answers in response to user questions.
 - 🌐 **Flexible Deployment**: Can be hosted locally or deployed on the cloud for enterprise use.
 - 🌟 **AI-Powered Insights**: Extracts answers directly from policy documents using RAG techniques.  
-- ⚡ **Lightning-Fast Retrieval**: Employs ChromaDB to store and query document embeddings for rapid responses.  
+- ⚡ **Lightning-Fast Retrieval**: Employs ChromaDB to store and query document embeddings along with Caching for rapid responses.  
 - 🤖 **Advanced Generation**: Integrates OpenAI's GPT-4 or Gemini API or any other State-of-the-Art models for context-rich explanations.  
 - 🌐 **User-Friendly Interface**: Designed for seamless interaction and understanding.  
 
@@ -29,7 +29,7 @@ Example Use Cases:
 
 ## 🛠️ Tech Stack
 - **Language**: Python-In Jupyter Notebook
-- **Frameworks/Libraries**: LlamaIndex, LangChain, ChromaDB, PDFplumber
+- **Frameworks/Libraries**: Transformers, ChromaDB, PDFplumber
 - **APIs/Models**: OpenAI's GPT-4/ GPT-4o/ GPT-4o-mini or Gemini API or any other State-of-the-Art models
 - **Tools used**: Jupyter Notebook
 
@@ -52,7 +52,7 @@ cd HelpMate_AI_Project_GenAI_UpGrad_IIITB
 3. Install the required dependencies:
 pip install -r requirements.txt
 
-Please note: OpenAI API keys are required for the project to function. You can obtain them from the OpenAI website and change the same in the code. We have updated the code and added more models to make it more dynamic in V2 of the project.
+- Please note: OpenAI API keys are required for the project to function. You can obtain them from the OpenAI website and change the same in the code. We have updated the code and added more models to make it more dynamic in V2 of the project.
 
 4. Run the main file from Jupyter environment:
 "helpmate-ai-upgrad_sandeep_b.ipynb"
@@ -61,9 +61,9 @@ Please note: OpenAI API keys are required for the project to function. You can o
 
 ## 📖 Documentation
 No documentation will be made available for this project since this project only uses technologies that already have their own documentation. Please refer to the following links for more information:
-- [LlamaIndex](https://www.llamaindex.ai/)
 - [ChromaDB](https://docs.trychroma.com/)
 - [PDFplumber](https://pypi.org/project/pdfplumber/0.1.2/)
+- [Sentence Transformes](https://www.sbert.net/docs/)
 - [OpenAI](https://platform.openai.com/docs/)
 
 ---
@@ -73,11 +73,11 @@ No documentation will be made available for this project since this project only
 
 - [Issue #2](Extracting Tables from PDF was also a challenge. Whole data processing logic was reworked with PdfPlumber to extract the data from tables in readable format and then appended in the correct sequence.)
 
-[Issue #3](Cache layer was added in ChromaDB to prevent re-embedding of the data. This was done to avoid overloading the ChromaDB server with data and to make the retrieval process more efficient.)
+- [Issue #3](Cache layer was added in ChromaDB to prevent re-embedding of the data. This was done to avoid overloading the ChromaDB server with data and to make the retrieval process more efficient.)
 
-[Issue #4](Cross Encoder based Reranker was added to better select the most relevant passages from the document. This was done to improve the quality of the answers to the user queries.)
+- [Issue #4](Cross Encoder based Reranker was added to better select the most relevant passages from the document. This was done to improve the quality of the answers to the user queries.)
 
-[Issue #5](System Prompt was fully reworked to include few shot examples and a few instructions to guide the model to generate more relevant answers to the user queries. This was done to improve the quality of the answers to the user queries.)
+- [Issue #5](System Prompt was fully reworked to include few shot examples and a few instructions to guide the model to generate more relevant answers to the user queries. This was done to improve the quality of the answers to the user queries.)
 
 ---
 
